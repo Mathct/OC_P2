@@ -26,13 +26,9 @@
                 <img src="./images/logo/Booki.png" alt="logo Booki" class="logo">
                 </div>
                 
-                <nav id="navbar">
-                    <div class="navbouton lienactif">
-                        <a href="#hebergements-and-populaires">Hébergements</a>
-                    </div>
-                    <div class="navbouton">
-                        <a href="#activite">Activités</a>
-                    </div>
+                <nav class="navbar">
+                    <a class="navbouton lienactif" href="#hebergements">Hébergements</a>
+                    <a class="navbouton" href="#activites">Activités</a>    
                 </nav>
 
             </div>
@@ -48,13 +44,16 @@
                     <p class="soustitredescription">En plein centre de ville ou en pleine nature</p>
                 </div>
 
-                <div class="recherche">
+                
+                <form action="index.html" class="form">
                     <div class="icon-map">
-                        <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt"></i>
                     </div>
+                
                     <input type="text" placeholder="Marseille, France" class="rechercheinput">
-                    <button class="bouton-recherche" id="bouton-recherche">Rechercher</button>
-                </div>
+                    <input class="bouton-recherche" type="submit" value="Rechercher">
+                </form>
+                
 
                 <div class="filtre">
                     <div class="titre-filtre">Filtres</div>
@@ -78,7 +77,7 @@
                 
                 <section class="hebergements">
 
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
 
                     <div class="grid-hebergements">
                         <div class="hebergements-cards">
@@ -281,8 +280,11 @@
 
             </div>
 
+        <!-- Section4: Activités -->   
+
         </main>
 
+        <!-- Section5: Footer -->
 
         <footer></footer>
 
