@@ -35,6 +35,8 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
 }
 
 .card {
@@ -60,7 +62,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/* Section Logo et Navbar  */
+/* Section1 Logo et Navbar  */
 
 #section1 {
     display: flex;
@@ -103,13 +105,13 @@ a {
 
 }
 
-/* Section Soustitre, description et Recherche */
+/* Section2 Soustitre, description et Recherche */
 
 #section2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 322px;
+    height: 281px;
     margin-bottom: 30px;
       
 }
@@ -201,11 +203,13 @@ a {
 .filtre-bouton {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid #D9D9D9;
     border-radius : 25px;
     padding: 12px 19px;
     gap: 10px;
     cursor: pointer;
+    
     
 }
 
@@ -252,9 +256,9 @@ a {
 }
 
 
+/* Section3 Hebergements et Populaires */
 
 
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -265,11 +269,54 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+       
+}
+
+.grid-hebergements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-auto-rows: min-content;
+}
+
+
+.hebergements-cards .card {
+    height: 207.25px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.afficherplus {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.hebergements-cards .card-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 /****** Populaires ***********/
