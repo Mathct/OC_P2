@@ -52,6 +52,8 @@ a {
 
 .card-title {
     font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
 }
 
 .euro {
@@ -72,15 +74,13 @@ a {
       
 }
 
-#logo {
-    padding-top: 30px; 
-    padding-bottom: 26px;
-    line-height: 19px;
-}
 
 .logo {
     width: 61.09px;
     height: 19px;
+    padding-top: 30px; 
+    padding-bottom: 26px;
+    line-height: 19px;
 }
 
 .navbar {
@@ -96,10 +96,10 @@ a {
     cursor: pointer;
 }
 
-.lienactif {
+/*.lienactif {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
-}
+}*/
 
 .navbouton:hover {
     color: var(--main-color);
@@ -204,44 +204,6 @@ a {
     margin-left: -10px;
 }
 
-/*.filtre {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}*/
-
-/*.groupe-filtre-bouton {
-    display: flex;
-    gap: 15px;
-    
-}*/
-
-/*.titre-filtre {
-    font-weight: 700;
-    font-size: 18px;
-}*/
-
-
-/*.filtre-bouton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #D9D9D9;
-    border-radius : 25px;
-    padding: 12px 16px;
-    gap: 10px;
-    cursor: pointer;
-}*/
-
-/*.texte-filtre {
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 19.96px;
-}*/
-
-/*.filtre-bouton:hover {
-    background-color: var(--filter-bg-color);
-}*/
 
 .icon-filtre {
     font-size: 22px;
@@ -259,49 +221,19 @@ a {
     font-size: 18px;
     line-height: 21.13px;
     display: flex;
-    align-items: center;  /* Centre verticalement */
+    align-items: center;
     
 }
 
-.filtre-bouton-grid1 {
+[class^="filtre-bouton-grid"] {
     border: 2px solid #D9D9D9;
     border-radius : 25px;
     display: flex;
-    align-items: center;  /* Centre verticalement */
-    justify-content: center;  /* Centre horizontalement */
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     cursor: pointer;
-}
-
-.filtre-bouton-grid2 {
-    border: 2px solid #D9D9D9;
-    border-radius : 25px;
-    display: flex;
-    align-items: center;  /* Centre verticalement */
-    justify-content: center;  /* Centre horizontalement */
-    gap: 10px;
-    cursor: pointer;
-}
-
-.filtre-bouton-grid3 {
-    border: 2px solid #D9D9D9;
-    border-radius : 25px;
-    display: flex;
-    align-items: center;  /* Centre verticalement */
-    justify-content: center;  /* Centre horizontalement */
-    gap: 10px;
-    cursor: pointer;
-}
-
-.filtre-bouton-grid4 {
-    border: 2px solid #D9D9D9;
-    border-radius : 25px;
-    display: flex;
-    align-items: center;  /* Centre verticalement */
-    justify-content: center;  /* Centre horizontalement */
-    gap: 10px;
-    cursor: pointer;
-}
+  }
 
 .texte-filtre-grid {
     font-weight: 700;
@@ -314,16 +246,15 @@ a {
 }
 
 
-
-
-
 #info {
     display: flex;
     align-items: center;
     
 }
 
-.info {
+
+.icon-info {
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,11 +265,6 @@ a {
     margin-right: 10px;
     box-sizing: border-box;
     min-width: 24px;
-
-}
-
-.icon-info {
-    font-size: 10px;
 }
 
 .texte-info {
@@ -556,21 +482,13 @@ a {
     line-height: 21.13px;
 }
 
-.footerlink {
+.sectionfooter a {
+    display: block;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
     margin-top: 15px;
 }
-
-
-/* animation card hover */
-
-.card:hover {
-    transform: scale(1.05);
-    transition: ease 0.5s;
-  }
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -588,7 +506,7 @@ a {
 
     .populaires {
         width: 100%;
-        /*margin-top: 50px;*/
+        
     }
 
     .populaires-cards {
@@ -600,22 +518,7 @@ a {
     .populaires-cards a {
         width: 30%;
     }
-
-    
-    .card-title {
-        font-size: 14px;
-    }
-
-    .card-subtitle {
-        font-size: 13px;
-    }
-
-    /*.filtre {
-        display: flex;
-        flex-direction: column;
-        align-items: normal;
-    }*/
-
+  
     .activite {
         height: 270px;
     }
@@ -772,32 +675,17 @@ a {
     
     }
 
-    .lienactif {
+    /*.lienactif {
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
-    }
+    }*/
 
     .form {
         display: flex;
         justify-content: center;
     }
 
-    /*.filtre-bouton {
-        display: flex;
-        width: 46%;
-        padding: 12px 0;
-        justify-content: normal;
-        padding-left: 15px;
-        
-    }
-
-    .groupe-filtre-bouton {
-        display: flex;
-        gap: 15px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }*/
-
+   
     .filtre-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
