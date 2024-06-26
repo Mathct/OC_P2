@@ -680,10 +680,10 @@ a {
         border-bottom: 2px solid var(--main-color);
     }*/
 
-    .form {
+    /*.form {
         display: flex;
         justify-content: center;
-    }
+    }*/
 
    
     .filtre-grid{
