@@ -668,10 +668,13 @@ a {
 
     .hebergements {
         width: 100%;
+        order: 1;
+        
     }
 
     .populaires {
         width: 100%;
+        order: 0;
         
     }
 
