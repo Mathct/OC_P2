@@ -36,10 +36,19 @@
 
     .filtre-grid{
         display: grid;
-        grid-template-columns: 167px 131px 164px 161px;
+        grid-template-columns: repeat(4, auto);
         grid-template-rows:  41px 50px;
         grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        justify-content: start; 
     }
+
+    [class^="filtre-bouton-grid"] {
+        padding-left: 13px;
+        padding-right: 13px;
+        justify-content: normal;
+        
+      }
 
     .titre-filtre-grid {
         grid-column-start: 1;

@@ -206,9 +206,12 @@ a {
 
 .filtre-grid{
     display: grid;
-    grid-template-columns: 54px 173px 134px 170px 167px;
+    grid-template-columns: repeat(5, auto); 
     grid-template-rows: 50px;
-    grid-column-gap: 15px;
+    gap: 15px; 
+    justify-content: start; 
+    
+    
 }
 
 .titre-filtre-grid {
@@ -227,6 +230,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
     
   }
 
