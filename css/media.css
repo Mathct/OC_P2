@@ -48,7 +48,7 @@
         grid-row-start: 2;
     }
 
-    
+
     /* Section3 Hebergements et Populaires */
 
     .hebergements-and-populaires {
@@ -92,6 +92,8 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    /****** General ***********/
+    
     .main-container {
         padding: 0;
     }
