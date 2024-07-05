@@ -3,38 +3,10 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
 
-    .hebergements {
-        width: 100%;
-    }
+     /* Section2 filtres */
 
-    .populaires {
-        width: 100%;
-        
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-  
-    .activite {
-        height: 270px;
-    }
-
-    .activite img {
-        height: 200px;
-    }
-
-    .filtre-grid{
+     .filtre-grid{
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-rows:  41px 50px;
@@ -76,88 +48,55 @@
         grid-row-start: 2;
     }
 
+    
+    /* Section3 Hebergements et Populaires */
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    /* Section4 Activités */
+  
+    .activite {
+        height: 270px;
+    }
+
+    .activite img {
+        height: 200px;
+    }
+
+   
 
 
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     .main-container {
         padding: 0;
     }
 
-    .hebergements {
-        width: 100%;
-        order: 1;
-        
-    }
-
-    .populaires {
-        width: 100%;
-        order: 0;
-        
-    }
-
-    .populaires-cards a {
-        width: 100%;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .grid-hebergements {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 30px;
-        grid-auto-rows: min-content;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .groupactivites {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .hebergements-and-populaires .hebergements{
-        background-color: white;
-        
-    }
-
-    .groupactivites a {
-        width: 100%;
-    }
-
-    .activite {
-        height: 200px;
-    }
-
-    .activite img {
-        height: 141px;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .sectionfooter {
-        width: 80%;
-        
-    }
-
-    #section2 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
+    /* Section1 Logo et Navbar  */
     #section1 {
         display: flex;
         flex-direction: column;
@@ -191,7 +130,13 @@
     
     }
 
-      
+    /* Section2 Soustitre, description, Recherche  et filtres */
+
+    #section2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .filtre-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -199,6 +144,7 @@
         grid-column-gap: 10px;
         grid-row-gap: 20px;
     }
+
 
     .titre-filtre-grid {
         grid-column-start: 1;
@@ -237,5 +183,82 @@
     .rechercheinput {
         padding-right: 11px;
     }
+
+    /* Section3 Hebergements et Populaires */
+
+    .hebergements {
+        width: 100%;
+        order: 1;
+        
+    }
+
+    .populaires {
+        width: 100%;
+        order: 0;
+        
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .grid-hebergements {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        grid-auto-rows: min-content;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+        
+    }
+
+    /* Section4 Activités */
+
+    .groupactivites {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    
+    .groupactivites a {
+        width: 100%;
+    }
+
+    .activite {
+        height: 200px;
+    }
+
+    .activite img {
+        height: 141px;
+    }
+
+    /* Section5 Footer */
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sectionfooter {
+        width: 80%;
+        
+    }
+
+    
    
 }
